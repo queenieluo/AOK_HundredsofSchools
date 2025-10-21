@@ -80,12 +80,88 @@ This dataset can be used for:
 
 ---
 
-### 2. Biographical Database of the Spring and Autumn and Warring States Periods  
-- **2,017 entries** on individuals active between **770–221 BCE**.  
-- Records include: **names, roles, affiliations, historical contexts**.  
-- Useful for **prosopography, social network analysis, and comparative studies**.  
-
+### 👥 Biographical Database of the Spring and Autumn and Warring States Periods  
 👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/biodb_sa_ws/index.html)  
+
+A structured dataset containing **biographical records of 2,017 historical individuals** active during the Spring and Autumn and Warring States Periods.
+Each entry captures names, roles, affiliations, locations, and contextual narratives — designed for prosopographical, geographical, and network-based historical analysis.
+
+---
+
+#### 📊 Dataset Overview
+
+* **Entries:** 2,017
+* **Chronological Range:** 770 BCE – 221 BCE
+* **Geographical Coverage:** Major Warring States and Spring–Autumn polities (Lu, Chu, Qin, Jin, Zhao, Wei, Qi, etc.)
+* **Language:** Chinese
+* **Sources:** Compiled from textual, archaeological, and encyclopedic materials (e.g., *Zuo Zhuan*, *Shiji*, transmitted commentaries).
+
+---
+
+#### 🧩 Data Structure
+
+| Column                                          | Description                                                                 |
+| ----------------------------------------------- | --------------------------------------------------------------------------- |
+| `person_name`                                   | Full name or title of the individual                                        |
+| `person_state`                                  | State or polity affiliation (e.g. 楚国, 鲁国, 秦国)                               |
+| `person_status`                                 | Official or social position (e.g. 君主, 大夫, 将军)                               |
+| `person_period`                                 | Chronological context (e.g. 春秋时期, 战国时期)                                     |
+| `person_year_birth`, `person_year_death`        | Estimated or recorded birth/death years (BCE)                               |
+| `person_summary`                                | Concise biographical abstract                                               |
+| `person_full_text`                              | Full biographical entry with narrative detail                               |
+| `person_cities`                                 | Related geographic locations (e.g. capitals, battlefields, ancestral lands) |
+| `person_narrative_people`                       | Other individuals mentioned in the biography                                |
+| `person_narrative_state`                        | States and polities appearing in the narrative                              |
+| `narrative_incidents`                           | Extracted list of historical events or actions                              |
+| `cleaned_person_status`, `cleaned_person_state` | Normalized categories for analysis                                          |
+| `map_year_birth`, `map_year_death`              | Chronologically aligned life-span data for timeline visualizations          |
+
+---
+
+#### 🧠 Dataset Features
+
+* **2,017 entries** covering rulers, ministers, generals, and scholars active between **770 – 221 BCE**
+* Structured metadata for:
+
+  * **Names, roles, and affiliations**
+  * **Lifespan and period classification**
+  * **Narrative events and state-level interactions**
+  * **Geospatial references** for historical mapping
+
+---
+
+#### 🔍 Analytical Applications
+
+This dataset supports:
+
+* **Prosopographical studies** — mapping elites and kinship structures
+* **Social network analysis** — identifying links between states and officials
+* **Historical geography** — visualizing movement and political influence
+* **Comparative chronology** — aligning biographies across periods and sources
+
+---
+
+#### ⚙️ File Info
+
+* **Entries:** 2,017
+* **Format:** CSV
+* **Encoding:** UTF-8
+* **Delimiter:** `,` (comma)
+
+---
+
+#### 🧩 Example Entry
+
+| Field                     | Example                                 |
+| ------------------------- | --------------------------------------- |
+| **Name**                  | 楚穆王（商臣）                                 |
+| **State**                 | 楚国                                      |
+| **Role**                  | 君主                                      |
+| **Period**                | 春秋时期                                    |
+| **Years**                 | 664 – 614 BCE                           |
+| **Summary**               | 楚穆王，芈姓熊氏，楚成王之子。前626年弑父自立，后灭江、蓼、六国，国势强盛。 |
+| **Locations**             | 江陵、郢都、寿春                                |
+| **Narrative Connections** | 楚成王、郑瞀、潘崇、楚庄王                           |
 
 ---
 
