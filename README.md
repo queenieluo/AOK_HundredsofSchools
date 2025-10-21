@@ -4,11 +4,79 @@ A collection of structured datasets and visualizations to support research in **
 
 ## Contents  
 
-### 1. Early Chinese Philosophical Texts  
-- **87,000 rows** of text from early Chinese works.  
-- Includes **X texts** and **X chapters** (from Wikisource).  
-- Each text is **machine-translated into English** using **GPT-4o**.  
-- Provides a **bilingual corpus** for digital humanities, linguistic analysis, and comparative philosophy.  
+# 📘 Classical Chinese Texts (English Translation) Dataset
+
+A structured corpus of **translated Classical Chinese texts**, compiled for linguistic, historical, and cultural research.
+All texts are aligned by paragraph and include metadata such as book, chapter, and historical period.
+
+---
+
+## 📊 Dataset Overview
+
+* **Books:** 96
+* **Chapters:** 4,039
+* **Lines of Text:** 87,242
+* **Languages:** Chinese (original) + English (translation)
+* **Translation:** All texts are translated into English for comparative analysis.
+
+---
+
+## 🧩 Data Structure
+
+| Column                               | Description                                                    |
+| ------------------------------------ | -------------------------------------------------------------- |
+| `Paragraph`                          | Unique identifier for each paragraph or passage                |
+| `TitleChinese`, `TitleEnglish`       | Title of the passage in Chinese and English                    |
+| `ChineseText`, `EnglishText`         | Original text and its English translation                      |
+| `Chapter Chinese`, `Chapter English` | Chapter title in both languages                                |
+| `Book Chinese`, `Book English`       | Book title in both languages                                   |
+| `Book period`                        | Historical period (e.g. “Warring States”, “Han”)               |
+| `earliest_date`, `latest_date`       | Approximate date range (BCE/CE)                                |
+| `link_title`                         | Short identifier or source tag                                 |
+| `original_translation`               | Notes on whether the translation is manual or machine-assisted |
+
+---
+
+## 🏺 Historical Coverage
+
+The dataset spans multiple dynastic and intellectual periods, including:
+
+* **Warring States texts** – e.g. *春秋左傳 (Chun Qiu Zuo Zhuan)*
+* **Qin and Han dynasty works** – e.g. *焦氏易林 (Jiaoshi Yilin)*, *釋名 (Shi Ming)*
+
+Each entry includes metadata on estimated composition dates and associated dynastic contexts.
+
+---
+
+## 🧠 Use Cases
+
+This dataset can be used for:
+
+* 📚 Historical and philological studies
+* 🤖 NLP and machine translation experiments
+* 📈 Text mining and semantic analysis
+* 🏺 Comparative literature and cultural research
+
+---
+
+## ⚙️ File Info
+
+* **Format:** CSV
+* **Encoding:** UTF-8
+* **Delimiter:** `,` (comma)
+* **Sample size:** 87,242 rows
+
+---
+
+## 🔗 Example Entry
+
+| Field       | Example                                                                 |
+| ----------- | ----------------------------------------------------------------------- |
+| **Book**    | 春秋左傳 (*Chun Qiu Zuo Zhuan*)                                             |
+| **Chapter** | 哀公 (*Ai Gong*)                                                          |
+| **Period**  | Warring States (ca. 468 – 300 BCE)                                      |
+| **Excerpt** | “In the seventeenth year, in spring, the Duke of Wei set a tiger trap…” |
+
 
 👉 [Access Table](TO DO)  
 
