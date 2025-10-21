@@ -1,12 +1,41 @@
-# Early Chinese Hundred Schools of Thoughts Database  
+# Early Chinese Hundred Schools of Thoughts Database
+1. [Overview](#early-chinese-hundred-schools-of-thoughts-database)
+2. [Classical Chinese Texts (English Translation) Dataset](#-classical-chinese-texts-english-translation-dataset)
 
-A collection of structured datasets and visualizations to support research in **early Chinese history, philosophy, and society**. This project integrates machine-extracted texts, biographical data, and spatial-temporal mapping tools to facilitate both quantitative and qualitative approaches to early Chinese historiography.  
+   * [Dataset Overview](#-dataset-overview)
+   * [Data Structure](#-data-structure)
+   * [Historical Coverage](#-historical-coverage)
+   * [Use Cases](#-use-cases)
+   * [File Info](#-file-info)
+   * [Example Entry](#-example-entry)
+3. [Biographical Database of the Spring and Autumn and Warring States Periods](#-biographical-database-of-the-spring-and-autumn-and-warring-states-periods)
 
-## Contents  
+   * [Dataset Overview](#-dataset-overview-1)
+   * [Data Structure](#-data-structure-1)
+   * [Dataset Features](#-dataset-features)
+   * [Analytical Applications](#-analytical-applications)
+   * [File Info](#-file-info-1)
+   * [Example Entry](#-example-entry-1)
+4. [*Zuo Zhuan* Text Dataset (人物资料集 / Individual Data Extracted from *Zuo Zhuan*)](#-zuo-zhuan-text-dataset-人物资料集--individual-data-extracted-from-zuo-zhuan)
+
+   * [Dataset Overview](#-dataset-overview-2)
+   * [Data Structure](#-data-structure-2)
+   * [Dataset Features](#-dataset-features-1)
+   * [Analytical Potential](#-analytical-potential)
+   * [File Info](#-file-info-2)
+   * [Example Entry](#-example-entry-2)
+5. [Biography by Time and Space (Map)](#-biography-by-time-and-space-map)
+6. [Support](#support)
+
+---
+
+A collection of structured datasets and visualizations to support research in **early Chinese history, philosophy, and society**. This project integrates machine-extracted texts, biographical data, and spatial-temporal mapping tools to facilitate both quantitative and qualitative approaches to early Chinese historiography.
+
+## Contents
 
 ### 📘 Classical Chinese Texts (English Translation) Dataset
 
-👉 [Access Table](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/book/index.html) 
+👉 [Access Table](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/book/index.html)
 A structured corpus of **translated Classical Chinese texts**, compiled for linguistic, historical, and cultural research.
 All texts are aligned by paragraph and include metadata such as book, chapter, and historical period.
 
@@ -80,8 +109,9 @@ This dataset can be used for:
 
 ---
 
-### 👥 Biographical Database of the Spring and Autumn and Warring States Periods  
-👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/biodb_sa_ws/index.html)  
+### 👥 Biographical Database of the Spring and Autumn and Warring States Periods
+
+👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/biodb_sa_ws/index.html)
 
 A structured dataset containing **biographical records of 2,017 historical individuals** active during the Spring and Autumn and Warring States Periods.
 Each entry captures names, roles, affiliations, locations, and contextual narratives — designed for prosopographical, geographical, and network-based historical analysis.
@@ -166,7 +196,9 @@ This dataset supports:
 ---
 
 ### 🏺 *Zuo Zhuan* Text Dataset (人物资料集 / Individual Data Extracted from *Zuo Zhuan*)
-👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/people/index.html)   
+
+👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/people/index.html)
+
 A structured dataset derived from the *Zuo Zhuan* (左傳), containing extracted information on historical individuals, their roles, and relationships across the text.
 This dataset enables quantitative analysis of personal networks, historical mentions, and social structure in early Chinese historiography.
 
@@ -229,6 +261,7 @@ This dataset enables:
 * **Format:** CSV
 * **Encoding:** UTF-8
 * **Delimiter:** `,` (comma)
+
 ---
 
 #### 🧩 Example Entry
@@ -236,21 +269,23 @@ This dataset enables:
 | Field           | Example                   |
 | --------------- | ------------------------- |
 | **Chapter**     | 襄公二年                      |
-| **Excerpt**     | “夏，齊姜薨，初，穆姜使擇美檟，以自為櫬…”    |
+| **Excerpt**     | “夏，齊姜薨，初，穆姜使擇美檟，以自为櫬…”    |
 | **Individuals** | 姜夫人, 穆姜, 季文子, 季孙          |
 | **Identities**  | 齐国君母, 姜夫人本人, 负责葬礼者, 其家族成员 |
 | **Year**        | -571 BCE                  |
 
 ---
 
-### 4. Biography by Time and Space (Map)  
-- Interactive **map visualization** of biographical data.  
-- Shows **spatial distribution** of individuals across states over time.  
-- Highlights **regional concentrations, rise and decline of states**, and intersections of geography and chronology.  
+### 4. Biography by Time and Space (Map)
 
-👉 [Access Map](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/states_by_decade/states_by_decade/index.html)  
+* Interactive **map visualization** of biographical data.
+* Shows **spatial distribution** of individuals across states over time.
+* Highlights **regional concentrations, rise and decline of states**, and intersections of geography and chronology.
+
+👉 [Access Map](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/states_by_decade/states_by_decade/index.html)
 
 ---
 
-## Support  
-This project is supported by **Harvard Library**.  
+## Support
+
+This project is supported by **Harvard Library**.
