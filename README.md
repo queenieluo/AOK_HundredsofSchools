@@ -6,7 +6,7 @@ A collection of structured datasets and visualizations to support research in **
 
 ### 📘 Classical Chinese Texts (English Translation) Dataset
 
-👉 [Access Table](TO DO)  
+👉 [Access Table](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/book/index.html) 
 A structured corpus of **translated Classical Chinese texts**, compiled for linguistic, historical, and cultural research.
 All texts are aligned by paragraph and include metadata such as book, chapter, and historical period.
 
@@ -166,7 +166,7 @@ This dataset supports:
 ---
 
 ### 🏺 *Zuo Zhuan* Text Dataset (人物资料集 / Individual Data Extracted from *Zuo Zhuan*)
-👉 [Access Database](TO DO)  
+👉 [Access Database](https://webpage-test-in-s3-bucket-01.s3.us-east-2.amazonaws.com/ZuoZhuanTranslations/people/index.html)   
 A structured dataset derived from the *Zuo Zhuan* (左傳), containing extracted information on historical individuals, their roles, and relationships across the text.
 This dataset enables quantitative analysis of personal networks, historical mentions, and social structure in early Chinese historiography.
 
